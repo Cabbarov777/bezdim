@@ -66,7 +66,7 @@ async def start_(client: Client, message: Message):
                 [
                     InlineKeyboardButton(
                         "👤 Developer",
-                        url=f"https://t.me/ValiyevAli",
+                        url=f"https://t.me/FlexDevs",
                     )
                 ],
                 [
