@@ -63,8 +63,8 @@ async def vplay(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="❄️ Menyu", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🎄 Bağla", callback_data="cls"),
+                InlineKeyboardButton(text="🔥 Menyu", callback_data="cbmenu"),
+                InlineKeyboardButton(text="✨ Bağla", callback_data="cls"),
             ]
         ]
     )
