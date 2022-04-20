@@ -53,7 +53,7 @@ async def _human_time_duration(seconds):
 )
 async def start_(client: Client, message: Message):
     await message.reply_text(
-        f"""__Salam {message.from_user.mention()}! Mən Lantus 🎧\nMən Sizin Grubunuzun Səsli Söhbətində Musiqi Çala Bilərəm\n\n Həmdə Səsli Söhbətdə Video Oynata Bilərəm\n\n\nBot Haqqında Məlumat Öyrənmək üçün Rəsmi Gruba Qatılın!__
+        f"""__Salam {message.from_user.mention()}! Mən Naptube 🎧\nMən Sizin Grubunuzun Səsli Söhbətində Musiqi Çala Bilərəm\n\n Həmdə Səsli Söhbətdə Video Oynata Bilərəm\n\n\nBot Haqqında Məlumat Öyrənmək üçün Rəsmi Gruba Qatılın!__
 """,
         reply_markup=InlineKeyboardMarkup(
             [
@@ -65,13 +65,13 @@ async def start_(client: Client, message: Message):
                 ],
                 [
                     InlineKeyboardButton(
-                        "👤 Developer",
+                        "👤 Yaradıcı",
                         url=f"https://t.me/Ordendi",
                     )
                 ],
                 [
                     InlineKeyboardButton(
-                        "🗨️ Dəstək qrupu", url=f"https://t.me/{GROUP_SUPPORT}"
+                        "🗨️ Söhbət Qrupum", url=f"https://t.me/{GROUP_SUPPORT}"
                     ),
                     InlineKeyboardButton(
                         "📣 Rəsmi kanal", url=f"https://t.me/{UPDATES_CHANNEL}"
@@ -97,10 +97,10 @@ async def new_chat(c: Client, m: Message):
                     [
                         [
                             InlineKeyboardButton("📣 Rəsmi Kanal", url=f"https://t.me/{UPDATES_CHANNEL}"),
-                            InlineKeyboardButton("🗨️ Dəstək qrupu", url=f"https://t.me/{GROUP_SUPPORT}")
+                            InlineKeyboardButton("🗨️ Söhbət Qrupum", url=f"https://t.me/{GROUP_SUPPORT}")
                         ],
                         [
-                            InlineKeyboardButton("🎶 Asistan", url=f"https://t.me/{ass_uname}")
+                            InlineKeyboardButton("✨Asistanım✨", url=f"https://t.me/{ass_uname}")
                         ]
                     ]
                 )
