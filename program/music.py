@@ -57,8 +57,8 @@ async def play(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="❄️ Menyu", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🎄 Bağla", callback_data="cls"),
+                InlineKeyboardButton(text="✨ Menyu", callback_data="cbmenu"),
+                InlineKeyboardButton(text="🔥 Bağla", callback_data="cls"),
             ]
         ]
     )
@@ -81,7 +81,7 @@ async def play(c: Client, m: Message):
         return
     if not a.can_delete_messages:
         await m.reply_text(
-            "xəta aşağıda yazılan yetkim yoxdur:" + "\n\n» ❌ __Mesaj silmə__"
+            "xəta aşağıda yazılan yetkim yoxdur:" + "\n\n» ❌ __Kulanıcı Yasaklama__"
         )
         return
     if not a.can_invite_users:
@@ -114,7 +114,7 @@ async def play(c: Client, m: Message):
                 pass
             except Exception as e:
                 return await m.reply_text(
-                    f"❌ **userbot qrupa qatıla bilmədi**\n\n**reason**: `{e}`"
+                    f"❌ **Naptube Asistan qrupa qatıla bilmədi**\n\n**reason**: `{e}`"
                 )
     if replied:
         if replied.audio or replied.voice:
@@ -141,7 +141,7 @@ async def play(c: Client, m: Message):
                 )
             else:
              try:
-                await suhu.edit("☃️ **Asistan səsli söhbətə qoşulur...**")
+                await suhu.edit("✨ **Asistan sesli Söhbete gelir Hazırlas...**")
                 await call_py.join_group_call(
                     chat_id,
                     AudioPiped(
@@ -166,7 +166,7 @@ async def play(c: Client, m: Message):
                     "» xəta"
                 )
             else:
-                suhu = await c.send_message(chat_id, "❄️ **Axtarılır...**")
+                suhu = await c.send_message(chat_id, "🤔 **Axtarılır...**")
                 query = m.text.split(None, 1)[1]
                 search = ytsearch(query)
                 if search == 0:
@@ -191,7 +191,7 @@ async def play(c: Client, m: Message):
                             )
                         else:
                             try:
-                                await suhu.edit("🎄 **Asistan səsli söhbətə qoşulur...**")
+                                await suhu.edit("✨ **Asistan sesli Söhbete gelir Hazırlaş...**")
                                 await call_py.join_group_call(
                                     chat_id,
                                     AudioPiped(
@@ -217,7 +217,7 @@ async def play(c: Client, m: Message):
                 "»Zəhmət olmasa **musiqi faylı** və ya **musiqi adı yazın.**"
             )
         else:
-            suhu = await c.send_message(chat_id, "❄️ **Axtarılır...**")
+            suhu = await c.send_message(chat_id, "🤔 **Axtarılır...**")
             query = m.text.split(None, 1)[1]
             search = ytsearch(query)
             if search == 0:
@@ -242,7 +242,7 @@ async def play(c: Client, m: Message):
                         )
                     else:
                         try:
-                            await suhu.edit("🎄 **Asistan səsli söhbətə qoşulur...**")
+                            await suhu.edit("✨ **Asistan Sesli Söhbete gelir Hazırlas...**")
                             await call_py.join_group_call(
                                 chat_id,
                                 AudioPiped(
@@ -272,8 +272,8 @@ async def stream(c: Client, m: Message):
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton(text="❄️ Menyu", callback_data="cbmenu"),
-                InlineKeyboardButton(text="🎄 Bağla", callback_data="cls"),
+                InlineKeyboardButton(text="✨ Menyu", callback_data="cbmenu"),
+                InlineKeyboardButton(text="🔥 Bağla", callback_data="cls"),
             ]
         ]
     )
@@ -360,7 +360,7 @@ async def stream(c: Client, m: Message):
                 )
             else:
                 try:
-                    await suhu.edit("🎄 **Asistan səsli söhbətə qoşulur...**")
+                    await suhu.edit("✨ **Asistan sesli Söhbete gelir Hazırlas...**")
                     await call_py.join_group_call(
                         chat_id,
                         AudioPiped(
